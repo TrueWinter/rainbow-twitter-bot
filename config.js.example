@@ -1,0 +1,35 @@
+var config = {
+
+	auth: {
+		consumer_key: '',
+		consumer_secret: '',
+		access_token_key: '',
+		access_token_secret: ''
+	},
+
+	tweet_options: {
+		interval: '24' // Hours
+	},
+
+	// You shouldn't need to change anything below this
+
+	rainbows: [ // The bot was originally just going to choose a random one of these to Tweet
+		//'❤️🧡💛💚💙💜',
+		//'🟥🟧🟨🟩🟦🟪',
+		//'🔴🟠🟡🟢🔵🟣',
+		//'🍎🍊🍋🥬🧊🍇',
+		'🌈',
+		'🏳️‍🌈'
+	],
+
+	colours: { // Twitter didn't like that the bot was Tweeting the same few Tweets, so now it will get a random emoji for each colour from here
+		red: ['❤️', '🟥', '🔴', '🍎', '🍒', '🍓'],
+		orange: ['🧡', '🟧', '🟠', '🍊', '📙', '🏀'],
+		yellow: ['💛', '🟨', '🟡', '🍋', '🌻', '🐤', '📒'],
+		green: ['💚', '🟩', '🟢', '🥬', '🐸', '🐢', '🐊', '🍏'],
+		blue: ['💙', '🟦', '🔵', '🧊', '🐋', '🐳', '🐬', '🐟'],
+		purple: ['💜', '🟪', '🟣', '🍇', '🔮', '☂️']
+	}
+};
+
+module.exports = config;
